@@ -49,3 +49,10 @@ O diagrama abaixo representa a topologia da cidade simulada no código:
 (Base)-4-(B)--3--(I)--3--(H)
   \         /
    ---9----
+
+```
+## 4. Análise dos Resultados
+### A aplicação conjunta de Clustering e Busca Heurística permite:
+* Balancear a carga de trabalho entre entregadores.
+* Reduzir a quilometragem total percorrida (otimização de $g(n)$).
+* Escalar a operação para dias de alta demanda.
