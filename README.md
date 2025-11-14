@@ -32,7 +32,7 @@ Conforme os conceitos da **Unidade 2**, modelamos a cidade como um **grafo ponde
 * **A Solução:** Utilizamos o **Algoritmo A* (A-Star)**.
 * **A* vs. BFS (Busca em Largura):**
     * A **Busca em Largura (BFS)** explora o grafo nível por nível e é ideal para grafos *não ponderados*. Como nossas ruas têm custos diferentes (distâncias), o BFS não garante a rota mais econômica.
-    * O **A*** é uma busca informada que utiliza uma heurística ($h(n)$) combinada com o custo real ($g(n)$) através da fórmula $f(n) = g(n) + h(n)$. Isso permite encontrar o caminho de menor custo de forma muito mais eficiente que buscas cegas.
+    * O **A*** é uma busca informada que utiliza uma heurística (h(n)) combinada com o custo real (g(n)) através da fórmula f(n) = g(n) + h(n). Isso permite encontrar o caminho de menor custo de forma muito mais eficiente que buscas cegas.
 
 ## 3. Diagrama do Grafo (Modelo Utilizado)
 O diagrama abaixo representa a topologia da cidade simulada no código:
@@ -54,5 +54,7 @@ O diagrama abaixo representa a topologia da cidade simulada no código:
 ## 4. Análise dos Resultados
 ### A aplicação conjunta de Clustering e Busca Heurística permite:
 * Balancear a carga de trabalho entre entregadores.
-* Reduzir a quilometragem total percorrida (otimização de $g(n)$).
+* Reduzir a quilometragem total percorrida (otimização de g(n)).
 * Escalar a operação para dias de alta demanda.
+  
+### CONCLUSÃO: O impacto no negócio é substancial, gera redução de custos operacionais e aumento da satisfação do cliente.
