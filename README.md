@@ -56,5 +56,13 @@ O diagrama abaixo representa a topologia da cidade simulada no código:
 * Balancear a carga de trabalho entre entregadores.
 * Reduzir a quilometragem total percorrida (otimização de g(n)).
 * Escalar a operação para dias de alta demanda.
-  
-### CONCLUSÃO: O impacto no negócio é substancial, gera redução de custos operacionais e aumento da satisfação do cliente.
+
+### Limitações e Sugestões de Melhoria
+   A solução atual é robusta, mas pode ser aprimorada, alinhando-se a outros conceitos das disciplinas:
+   * **Tráfego em Tempo Real:** A heurística de A* é estática. Uma melhoria seria
+usar Redes Bayesianas (mencionadas na Unidade 2 5) para prever o tempo de viagem com base na hora do dia.
+   * **Problema do Caixeiro Viajante (TSP):** A rota atual otimiza os trechos (Base->C, C->D). Para otimizar a ordem de visita dentro de uma zona, poderíamos aplicar Algoritmos Genéticos 6ou Simulated Annealing 7 (conceitos da Unidade 2) para resolver o TSP8.
+   * **Qualidade dos Dados:** O sucesso depende de bons dados de mapa. Antes de implementar, usaríamos ferramentas de Data Quality (como as vistas na Unidade 4 9) para validar os dados do grafo.
+
+## 5. Conclusão
+   #### O impacto no negócio é substancial, gera redução de custos operacionais e aumento da satisfação do cliente.
